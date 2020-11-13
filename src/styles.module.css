@@ -1,9 +1,64 @@
-/* add css module styles here (optional) */
+.create-book-photo-picker {
+  /* border-radius: 50%; */
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  position: relative;
+  z-index: 99;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.356);
+  margin-bottom: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3rem;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.create-book-photo-input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.create-book-photo-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.create-book-image-preview-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+}
+
+.create-book-image-preview-image-box {
+  /* width: 550px;
+  height: 350px; */
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  object-fit: fill;
+}
+
+.create-book-image-input-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.create-book-image-preview-icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: tomato;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

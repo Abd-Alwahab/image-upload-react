@@ -1,12 +1,19 @@
 {
   "name": "image-upload-react",
-  "version": "1.0.0",
+  "version": "1.4.9",
   "description": "react image picker",
   "author": "Abd-Alwahab",
   "license": "MIT",
   "repository": "Abd-Alwahab/image-upload-react",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
+  "keywords": [
+    "react",
+    "javascript",
+    "image-upload",
+    "react-image",
+    "redux"
+  ],
   "source": "src/index.js",
   "engines": {
     "node": ">=10"
@@ -24,7 +31,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "react-icons": "^3.11.0"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
@@ -49,5 +57,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "react-icons": "^3.11.0"
+  }
 }

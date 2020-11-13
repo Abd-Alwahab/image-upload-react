@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { ExampleComponent } from 'image-upload-react'
+import ImageUpload from 'image-upload-react'
 import 'image-upload-react/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const [imageSrc, setImageSrc] = useState()
+
+  const handleImageSelect = (e) => {
+    setImageSrc(URL.createObjectURL(e.target.files[0]))
+  }
+
+  return (
+    <ImageUpload
+      handleImageSelect={handleImageSelect}
+      imageSrc={imageSrc}
+      setImageSrc={setImageSrc}
+      style={{
+        width: 700,
+        height: 500,
+        background: 'gold'
+      }}
+    />
+  )
 }
 
 export default App
