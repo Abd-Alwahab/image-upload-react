@@ -15,6 +15,9 @@ const App = () => {
       handleImageSelect={handleImageSelect}
       imageSrc={imageSrc}
       setImageSrc={setImageSrc}
+      defaultDeleteIconSize={60}
+      defaultDeleteIconColor="#222"
+      deleteIcon={<div>Delete</div>}
       style={{
         width: 700,
         height: 500,
